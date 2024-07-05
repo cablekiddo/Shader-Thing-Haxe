@@ -1,0 +1,13 @@
+import openfl.filters.ShaderFilter;
+import openfl.display.Shader;
+
+var shader:MyShader;
+
+shader = new MyShader();
+var shaderFilter = new ShaderFilter(shader);
+
+ FlxG.game.setFilters([shaderFilter]);
+
+update(elapsed)
+
+shader.update(elapsed);
